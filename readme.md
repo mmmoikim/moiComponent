@@ -1,6 +1,6 @@
 # moiComponent
 
-[npm](ttps://www.npmjs.com/package/react-uikit-moi)
+[npm link](https://www.npmjs.com/package/react-uikit-moi)
 
 - react, storybook, @emotion/core, typescript
 - 컴포넌트 프로젝트
