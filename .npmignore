@@ -1,0 +1,9 @@
+{
+  "name": "react-uikit-moi",
+  "version": "1.0.0",
+  "module": "dist/index.js",
+  "license": "MIT",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "/dist"
+  ],

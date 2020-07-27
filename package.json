@@ -1,8 +1,9 @@
 {
-  "name": "SASHA",
+  "name": "react-uikit-moi",
   "version": "1.0.0",
-  "main": "index.js",
+  "module": "dist/index.js",
   "license": "MIT",
+  "types": "dist/types/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.4",
@@ -13,21 +14,32 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@svgr/rollup": "^5.4.0",
     "@types/jest": "^26.0.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-preset-react-app": "^9.1.2",
     "jest": "^26.1.0",
     "react-docgen-typescript-loader": "^3.7.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-url": "^3.0.1",
     "ts-jest": "^26.1.1",
     "ts-loader": "^8.0.0",
     "typescript": "^3.9.6"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.28"
+    "@emotion/core": "^10.0.28",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
